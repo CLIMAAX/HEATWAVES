@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/CLIMAAX/HEATWAVESS/main?labpath=HEATWAVES.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/CLIMAAX/HEATWAVES/main?labpath=Workflow_notebook_template.ipynb)
 
 # HEATWAVES
 Repository for collaboration on workflows for heatwaves hazard
