@@ -29,6 +29,7 @@ dependencies:
         - ipympl
         - nbmake
         - pytest
+        - voila
         - pip:
             - netcdf4
             - damagescanner
