@@ -5,31 +5,25 @@ channels:
 
 dependencies:
         - python=3.11
-        - gdal
-        - numpy
-        - geopandas
+        - zipfile
+        - os
         - rasterio
-        - matplotlib
-        - tqdm
-        - pip
-        - jupyterlab
-        - xlrd
-        - pyproj
-        - xarray
+        - pathlib
         - rioxarray
-        - osmnx
-        - leafmap
-        - eccodes
-        - earthkit-data
+        - cdsapi
+        - numpy
+        - pandas
+        - xarray
+        - osgeo
+        - cartopy
+        - matplotlib
+        - rasterio
+        -  glob
+        - geopandas
+        - pyproj
         - cfgrib
         - scipy
-        - cartopy
-        - pandas
-        - ipywidgets
-        - ipympl
-        - nbmake
-        - pytest
-        - voila
+
         - pip:
             - netcdf4
             - damagescanner
