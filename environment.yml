@@ -5,8 +5,6 @@ channels:
 
 dependencies:
         - python=3.11
-        - zipfile
-        - os
         - rasterio
         - pathlib
         - rioxarray
@@ -14,15 +12,17 @@ dependencies:
         - numpy
         - pandas
         - xarray
-        - osgeo
+        - xarray-spatial
         - cartopy
         - matplotlib
         - rasterio
-        -  glob
+        - gdal
+        - jupyterlab
         - geopandas
         - pyproj
         - cfgrib
         - scipy
+        - pip
 
         - pip:
             - netcdf4
