@@ -27,9 +27,7 @@ Based on the current climate scenario the occurrence of the heat-wave phenomenon
 In the risk assessment, we focus on the estimation of the:
 
 - **Exposure** = Heat islands (identification of the overheated places)
-  
 - **Vulnerability** = Vulnerable population (people over 65 and under 5 years old)
-  
 - **Risk** = Exposure x Vulnerability map for human health (You need to consider the **Probability** from the results of the Hazard workflow. However, due to the coarse resolution of Hazard data, you will not see any differences in the different parts of the cities. But you can see the differences in the regional scale.)
 
 **(Bonus)** Vegetation characteristics = NDVI vegetation characteristics (Current health condition of the vegetation)
@@ -37,18 +35,17 @@ In the risk assessment, we focus on the estimation of the:
 **Data for Risk assessment**
 
 - **Exposure data** = Heat islands estimation from the Landsat8 satellite imagery [[source]()]
-- Estimation of the Land surface temperature
-- Resolution 30x30m
-- Period: 2013-2021 (till now from Landsat9, need another processing)
-- **Data limitations**: Problems with clouds, 16-day time step (not daily data), The resolution of 30x30 meters does not catch all the details   
+  - Estimation of the Land surface temperature
+  - Resolution 30x30m
+  - Period: 2013-2021 (till now from Landsat9, need another processing)
+  - **Data limitations**: Problems with clouds, 16-day time step (not daily data), The resolution of 30x30 meters does not catch all    the details   
 
 - **Vulnerability** = Vulnerable population groups (elderly people over 65 years and under 5 years) [[source]()]
-- Data from the WorldPop website
-- Resolution 100x100m
-- **Data limitations**: Resolution of 100x100m, data for the year 2020 (might have changed)
+  - Data from the WorldPop website
+  - Resolution 100x100m
+  - **Data limitations**: Resolution of 100x100m, data for the year 2020 (might have changed)
 
 - **(Bonus)** Vegetation characteristics data from Sentinel2 satellite imagery [[source]()]
-
-- Estimation of the Normalize Difference Vegetation Index (NDVI) for the estimation of vegetation health
-- Resolution 10x10m 
-- **Data limitations**: Problems with clouds, 8-day time step (not daily data), The resolution of 10x10 meters does not catch all details
+  - Estimation of the Normalize Difference Vegetation Index (NDVI) for the estimation of vegetation health
+  - Resolution 10x10m 
+  - **Data limitations**: Problems with clouds, 8-day time step (not daily data), The resolution of 10x10 meters does not catch all     details
