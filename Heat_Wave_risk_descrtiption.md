@@ -24,15 +24,17 @@ You can find more information about the data in the following links.
 
 **2. Risk assessment** 
 =======================
-Based on the current climate scenarios the occurrence of the heat-wave phenomenon should be more frequent in the future in Europe. The main problems connected with Heat-wave events are the overheating of the urban areas, which lowers the comfort of living or causes health issues [[Integrated Assessment of Urban Overheating Impacts on Human Life](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002682)], drought, and water scarcity. Nowadays, there are a lot of studies and methodologies on how we can mitigate the influence of these events. 
+Based on the current climate scenarios the occurrence of the heat-wave phenomenon should be more frequent in the future in Europe. The main problems connected with Heat-wave events are the overheating of the urban areas, which lowers the comfort of living or causes health issues [[Integrated Assessment of Urban Overheating Impacts on Human Life](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002682)], drought, and water scarcity. Nowadays, there are a lot of studies and methodologies on how we can mitigate the influence of these events. For 
 
-In the risk assessment, we focus on the estimation of the:
+In the risk assessment, we focused on the estimation of the exposure and vulnerability which was based on the observed data. You can also see the probability of the heat-wave occurrence from the hazard assessment.
 
 - **Exposure**: Heat islands (identification of the overheated places)
 - **Vulnerability**: Vulnerable population (people over 65 and under 5 years old)
-- **Risk**: Exposure x Vulnerability map for human health (You need to consider the **Probability** from the results of the Hazard workflow. However, due to the coarse resolution of Hazard data, you will not see any differences in the different parts of the cities. But you can see the differences in the regional scale.)
+- **Risk = Exposure x Vulnerability**. For human health (you need to also consider the **Probability** from the results of the Hazard workflow. However, due to the coarse resolution of Hazard data, you will not see any differences in the different parts of the cities. But you can see the differences in the regional scale.)
 
-**(Bonus)** Vegetation characteristics = NDVI vegetation characteristics (Current health condition of the vegetation)
+**(Bonus)** Vegetation characteristics = NDVI vegetation characteristics (current health condition of the vegetation)
+
+The results of the Risk assessment give you information about the overheated areas, places populated with vulnerable groups of the population. You can also use the vegetation characteristics data to see the influence of the current heat events on the vegetation. 
 
 **Data for Risk assessment**
 
