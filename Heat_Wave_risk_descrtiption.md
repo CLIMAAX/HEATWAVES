@@ -2,7 +2,7 @@ Risk Assessment for Heat-Wave
 =======================
 **Heat-wave definition**
 
-Multiple methodologies can define the heat wave. But in general, the heat-wave is determined by the air temperature and the duration (days) thresholds. 
+Multiple methodologies can define the heat wave. But in general, the heat-wave is determined by the air temperature and the duration (days) thresholds. Thus the most frequent definition of a heat wave is the occurrence of at least multiple consecutive days with the maximum air (and minimum air temperature depending on the methodology) temperature over a certain treshold. 
 
 **Risk Assessment methodology**
 
