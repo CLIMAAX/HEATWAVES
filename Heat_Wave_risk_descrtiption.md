@@ -28,13 +28,21 @@ Based on the current climate scenarios the occurrence of the heat-wave phenomeno
 
 In the risk assessment, we focused on the estimation of the exposure and vulnerability which was based on the observed data. You can also see the probability of the heat-wave occurrence from the hazard assessment.
 
-- **Exposure**: Heat islands (identification of the overheated places)
+- **Exposure**: Heat islands (identification of the overheated places, place most exposed to the heat)
 - **Vulnerability**: Vulnerable population (people over 65 and under 5 years old)
 - **Risk = Exposure x Vulnerability**. For human health (you need to also consider the **Probability** from the results of the Hazard workflow. However, due to the coarse resolution of Hazard data, you will not see any differences in the different parts of the cities. But you can see the differences in the regional scale.)
 
-**(Bonus)** Vegetation characteristics = NDVI vegetation characteristics (current health condition of the vegetation)
+For the risk assessment, we use the 5x5 risk matrix:
+
+![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/risk_matrix.png?raw=true "Risk matrix example")
+
+**Vegetation characteristics** = NDVI vegetation characteristics (current health condition of the vegetation)
 
 The results of the Risk assessment give you information about the overheated areas, places populated with vulnerable groups of the population. You can also use the vegetation characteristics data to see the influence of the current heat events on the vegetation. 
+
+We divided the NDVI into classes that represent the vegetation health based on the NDVI values [[source](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index)]:
+
+![![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/ndvi_categories_example.png?raw=true "NDVI categories")
 
 **Data for Risk assessment**
 
@@ -42,14 +50,14 @@ The results of the Risk assessment give you information about the overheated are
   - Estimation of the Land surface temperature
   - Resolution 30x30m
   - Period: 2013-2021 (till now from Landsat9, need another processing)
-  - **Data limitations**: Problems with clouds, 16-day time step (not daily data), The resolution of 30x30 meters does not catch all  the details   
+  - **Data limitations**: Problems with clouds, 16-day time step (not daily data) we can miss the hottest days, The resolution of 30x30 meters does not catch all  the details   
 
 - **Vulnerability**: Vulnerable population groups (elderly people over 65 years and under 5 years) [[source](https://data.humdata.org/dataset/?dataseries_name=Data%20for%20Good%20at%20Meta%20-%20High%20Resolution%20Population%20Density%20Maps%20and%20Demographic%20Estimates&dataseries_name=WorldPop%20-%20Age%20and%20sex%20structures&dataseries_name=WorldPop%20-%20Population%20Density&groups=svk&res_format=GeoTIFF&q=&sort=last_modified%20desc&ext_page_size=25)]
   - Data from the WorldPop website
   - Resolution 100x100m
-  - **Data limitations**: Resolution of 100x100m, data for the year 2020 (might have changed)
+  - **Data limitations**: Resolution of 100x100m, data for the year 2020 (might have changed), but you can use your data. 
 
-- **(Bonus)** Vegetation characteristics data from Sentinel2 satellite imagery [[source](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE)]
+- **Vegetation characteristics** data from Sentinel2 satellite imagery [[source](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE)]
   - Estimation of the Normalize Difference Vegetation Index (NDVI) for the estimation of vegetation health
   - Resolution 10x10m 
   - **Data limitations**: Problems with clouds, 8-day time step (not daily data), The resolution of 10x10 meters does not catch all details
