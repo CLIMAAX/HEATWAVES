@@ -6,7 +6,7 @@ Multiple methodologies can define the heat wave. But in general, the heat-wave i
 
 **Risk Assessment methodology**
 
-This workflow consists of two parts: 1. Hazard and 2.Risk Assessment:
+This workflow consists of two parts: 1. Hazard and 2. Risk Assessment:
 
 ## 1. Hazard assessment
 
@@ -42,7 +42,7 @@ The results of the Risk assessment give you information about the overheated are
 
 We divided the NDVI into classes that represent the vegetation health based on the NDVI values [[source](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index)]:
 
-![![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/ndvi_categories_example.png?raw=true "NDVI categories")
+![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/ndvi_categories_example.png?raw=true "NDVI categories")
 
 **Data for Risk assessment**
 
