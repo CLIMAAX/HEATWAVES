@@ -30,7 +30,8 @@ In the risk assessment, we focused on the estimation of the exposure and vulnera
 
 - **Exposure**: Heat islands (identification of the overheated places, place most exposed to the heat)
 - **Vulnerability**: Vulnerable population (people over 65 and under 5 years old)
-- **Risk = Exposure x Vulnerability**. For human health (you need to also consider the **Probability** from the results of the Hazard workflow. However, due to the coarse resolution of Hazard data, you will not see any differences in the different parts of the cities. But you can see the differences in the regional scale.)
+- **Risk = Exposure x Vulnerability**
+- You need to consider the **Probability** from the results of the Hazard workflow. However, due to the coarse resolution of Hazard data, we did not implement it in the Risk equation, because you will not see any differences in the different parts of the cities. 
 
 For the risk assessment, we use the 5x5 risk matrix:
 
