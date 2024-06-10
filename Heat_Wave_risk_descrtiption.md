@@ -22,7 +22,7 @@ You can find more information about the data in the following links.
 - **PESETA IV [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]**
 - **XCLIM [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]**
 
-## 2. Risk assessment** 
+## 2. Risk assessment 
 
 Based on the current climate scenarios the occurrence of the heat-wave phenomenon should be more frequent in the future in Europe. The main problems connected with Heat-wave events are the overheating of the urban areas, which lowers the comfort of living or causes health issues [[Integrated Assessment of Urban Overheating Impacts on Human Life](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002682)], drought, and water scarcity. Nowadays, there are a lot of studies and methodologies on how we can mitigate the influence of these events. For 
 
