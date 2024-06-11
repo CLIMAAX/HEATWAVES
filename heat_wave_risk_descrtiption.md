@@ -62,3 +62,30 @@ We divided the NDVI into classes that represent the vegetation health based on t
   - Estimation of the Normalize Difference Vegetation Index (NDVI) for the estimation of vegetation health
   - Resolution 10x10m 
   - **Data limitations**: Problems with clouds, 8-day time step (not daily data), The resolution of 10x10 meters does not catch all details
+
+# References
+
+Euroheat: 11.6.2024
+[[source](https://confluence.ecmwf.int/display/CKB/Heat+waves+and+cold+spells+in+Europe+derived+from+climate+projections+documentation#heading-3References)]
+
+Peseta IV: 11.6.2024
+[[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]
+
+XCLIM: 11.6.2024
+[[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]
+
+RSLAB, Land surface Temperature, based on the Landsat8 imagery: 11.6.2024
+[[source](https://rslab.gr/Landsat_LST.html)]
+
+Humdata: world population data. Distribution of the critical groups of the population. 11.6.2024
+[[source](https://data.humdata.org/dataset/?dataseries_name=Data%20for%20Good%20at%20Meta%20-%20High%20Resolution%20Population%20Density%20Maps%20and%20Demographic%20Estimates&dataseries_name=WorldPop%20-%20Age%20and%20sex%20structures&dataseries_name=WorldPop%20-%20Population%20Density&groups=svk&res_format=GeoTIFF&q=&sort=last_modified%20desc&ext_page_size=25)]
+
+Copernicus browser: Sentinel2 LA2 immagery for the estimation of the NDVI. 11.6.2024
+[[source](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE)]
+
+Cropinn: NDVI classes. 11.6.2024 [[source](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index)]
+
+# Authors
+
+Martin Kuban, KAJO services. [[link](https://www.kajoservices.com/)]
+Milan Kalas, KAJO services. [[link](https://www.kajoservices.com/)]
