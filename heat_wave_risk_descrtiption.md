@@ -16,11 +16,16 @@ Results from hazard assessment give you information about the heat-wave occurren
 
 **Data for Hazard assessment**
 
-You can find more information about the data in the following links.
+More information about the data and methodology is in the following links.
 
 - **EUROheat [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-heat-and-cold-spells?tab=form)]**
 - **PESETA IV [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]**
 - **XCLIM [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]**
+
+**Data limitations:**
+- All 3 methodologies are based on the EuroCordex climate projections data
+- The resolution of 12x12 km is not suitable for the cities and smaller areas.
+- The uncertainties of the climate data scenarios data
 
 ## 2. Risk assessment 
 
@@ -39,7 +44,7 @@ For the risk assessment, we use the 5x5 risk matrix:
 
 **Vegetation characteristics** = NDVI vegetation characteristics (current health condition of the vegetation)
 
-The results of the Risk assessment give you information about the overheated areas, places populated with vulnerable groups of the population. You can also use the vegetation characteristics data to see the influence of the current heat events on the vegetation. 
+The Risk assessment results give you information about the overheated areas, places populated with vulnerable groups of the population. You can also use the vegetation characteristics data to see the influence of the current heat events on the vegetation. 
 
 We divided the NDVI into classes that represent the vegetation health based on the NDVI values [[source](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index)]:
 
