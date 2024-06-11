@@ -63,7 +63,7 @@ We divided the NDVI into classes that represent the vegetation health based on t
   - Resolution 10x10m 
   - **Data limitations**: Problems with clouds, 8-day time step (not daily data), The resolution of 10x10 meters does not catch all details
 
-# References
+## References
 
 Euroheat: 11.6.2024
 [[source](https://confluence.ecmwf.int/display/CKB/Heat+waves+and+cold+spells+in+Europe+derived+from+climate+projections+documentation#heading-3References)]
@@ -85,7 +85,7 @@ Copernicus browser: Sentinel2 LA2 immagery for the estimation of the NDVI. 11.6.
 
 Cropinn: NDVI classes. 11.6.2024 [[source](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index)]
 
-# Authors
+## Authors
 
 Martin Kuban, KAJO services. [[link](https://www.kajoservices.com/)]
 Milan Kalas, KAJO services. [[link](https://www.kajoservices.com/)]
