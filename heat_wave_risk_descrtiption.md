@@ -1,4 +1,4 @@
-# Risk Assessment for Heat-Wave 
+# Heat-wave: Definitions and data sources
 
 **Heat-wave definition**
 
