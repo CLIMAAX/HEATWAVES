@@ -1,11 +1,10 @@
-# Heat-wave workflow
+# Heatwaves
+## Workflow for heatwave risk assessment under climate scenarios
 
-Multiple methodologies can define the heat wave. But in general, the heat-wave is determined by the air temperature and the duration (days) thresholds. Thus the most frequent definition of a heat wave is the occurrence of at least multiple consecutive days with the maximum air (and minimum air temperature depending on the methodology) temperature over a certain threshold. 
+Multiple methodologies can be used to define a heatwave. But in general, a heatwave is determined using thresholds for air temperature and its persistency (duration in the number of days). The most common definition of a heatwave is the occurrence of multiple consecutive days with the maximum air temperature over a certain threshold. In some methodologies thresholds are also defined for the minimum air temperature.
 
-The heat-wave workflow focuses on the estimation of the heat-wave events for the past, and for the future based on the Euro-Cordex climate scenarios data. The user can see the difference between the heat-wave occurrence caused by the influence of climate change for medium and extreme scenarios of the representation concentration pathways (RCPs), for the selected area in Europe in the 12x12km spatial resolution. The results are provided for years and months and also provide information about the heat-wave duration (total number of days) of the heat-waves.
+The heatwave workflow focuses on estimating the frequency of heatwave events for the present and the future climate based on the EURO-CORDEX climate scenarios data (dataset with 12 km spatial resolution). The workflow aids the user in understanding the effect of climate change on the occurrence of heatwaves under different climate change scenarios (RCPs) within a user-defined region in Europe. This data is obtained for different temporal resolutions (months or years). Changes to heatwave duration (total number of days) are also analyzed.
 
-In addition, the user gets information about the overheated parts in selected areas and the distribution of the vulnerable groups of the population in the 100x100m resolution. These informations are based on the measured data in your area. If you are more interested in the influence of the heat on the vegetation, you can also use the high-resolution (10x10m) vegetation characteristics data from remote sensing. This data gives you information about the current vegetation health. In this workflow, you will find the manuals on where to find these data and how to extract these informations. 
-
-More information you can find in the Heat-wave workflow!
+The risk to the vulnerable population due to heatwaves can be analyzed using the heatwave hazard data in combination with the information on the distribution of the vulnerable population groups. In this workflow we demonstrate such analysis using high-resolution satellite-derived (measured) data on heatwaves (100m spatial resolution). If you are more interested in the influence of heatwaves on vegetation, you can also use the high-resolution (10m) vegetation characteristics data derived from remote sensing. This data gives you information about the current vegetation health. In this workflow, you will find instruction on where to find these data and how to analyse this information. 
 
 
