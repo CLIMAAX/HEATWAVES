@@ -1,96 +1,97 @@
-# Heat-wave: Definitions and data sources
+# Heatwaves 
+## Methodology and data overview
 
-**Heat-wave definition**
+This workflow is designed to help in exploring the local and regional risks presented by heatwaves, and assessing the impact of climate change on the heatwave hazard.
 
-Multiple methodologies can define the heat wave. But in general, the heat-wave is determined by the air temperature and the duration (days) thresholds. Thus the most frequent definition of a heat wave is the occurrence of at least multiple consecutive days with the maximum air (and minimum air temperature depending on the methodology) temperature over a certain treshold. 
+A heatwave is defined by the maximum daily temperature exceeding a certain threshold for a certain minimum amount of time. Various definitions are used in different methodologies for heatwave risk assessments, and in this workflow we will explore the heatwave hazard based on several commonly used methodologies. The risk assessment focuses on the health risks presented to vulnerable population (elderly people).
 
-**Risk Assessment methodology**
+### Hazard assessment under climate change
+To assess the heatwave hazard, we use three different methodologies: EuroHEAT, Peseta IV and Xclim. The user can choose to apply one of these methodologies based on their preferred heatwave definition. The methodologies differ in terms of the required input data, temperature tresholds, duration thresholds, computing algorithm, and results. 
 
-This workflow consists of two parts: 1. Hazard and 2. Risk Assessment:
+ [EuroHEAT](https://climate-adapt.eea.europa.eu/en/metadata/tools/euroheat-online-heatwave-forecast) defines the heatwave as a period where the maximum apparent and the minimum temperature are over the 90th percentile of the monthly distribution for at least two days. The monthly distribution is based on 30-year timeseries of daily temperatures in the recent historical climate (1971-2000).
 
-## 1. Hazard assessment
+<span style="color:red">
+[Peseta IV](https://joint-research-centre.ec.europa.eu/peseta-projects/jrc-peseta-iv_en) - defines a heatwave as a period at least 3 consecutive days with the maximum daily temperature above the threshold calculated for a 30 year reference period. - how is the threshold calculated?s
+</span>
 
-In Hazard assessment, we use 3 different methodologies ([Euroheat](https://climate-adapt.eea.europa.eu/en/metadata/tools/euroheat-online-heatwave-forecast), [Peseta IV](https://de.wikipedia.org/wiki/Peseta_IV), [Xclim](https://xclim.readthedocs.io/en/stable/indicators.html) ) for the heat-wave estimation. The user can choose from the most suitable methods for his needs. These methodologies differ in the input data, temperature treshold, duration thresholds, computing algorithm, and results. So in the first step, the user will choose the methodology based on the pros and cons of each methodology. Each methodology works with the air temperature data for the Representative Concentration Pathways (RCPs) climate scenarios 4.5 (medium) and 8.5 (extreme) [[more about RCPs](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)]. 
+[Xclim](https://xclim.readthedocs.io/en/stable/indicators.html) project defines  a heatwave based on user-defined absolute temperature thresholds for the maximum and minimum daily temperatures (i.e. day and night temperatures), and a mimimum time duration (e.g. 2 or 3 days). Using absolute thresholds for temperature requires input in terms of temperature thresholds, which are typically specific to a region and based on expected health impacts.
 
-Results from hazard assessment give you information about the heat-wave occurrence in the reference period 1971-2000 and three projection periods 2011-2040, 2041-2070, and 2071-2100 represented in yearly and monthly (only Peseta IV) values. 
+Each methodology is demonstrated in this workflow using air temperature data from EURO-CORDEX as input. We use the climate scenarios RCP4.5 (medium) and RCP8.5 (extreme) to compare the effect of different climate scenarios ([more about RCPs](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)). 
 
-**Data for Hazard assessment**
+As a result of the hazard assessment, we can obtain information about the heatwave frequency of occurrence in the reference period of 1971-2000 and three future periods: 2011-2040, 2041-2070 and 2071-2100. This result is based on model data for climate projections. In all methods yearly frequency of heatwaves is calculated, and monthly frequencies are also calculated in the Peseta IV methodology.
 
-More information about the data and methodology is in the following links.
+#### Hazard datasets and limitations
+Methodologies Peseta IV and Xclim are applied in this workflow based on [EURO-CORDEX data](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form).
 
-- **EUROheat [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-heat-and-cold-spells?tab=form)]**
-- **PESETA IV [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]**
-- **XCLIM [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]**
+Heat wave data prepared by the EuroHEAT project is directly available from the [dedicated dataset](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-heat-and-cold-spells?tab=form) on the Copernicus Data Store. This data was also prepared based on EURO-CORDEX data.
 
-**Data limitations:**
-- All 3 methodologies are based on the EuroCordex climate projections data
-- The resolution of 12x12 km is not suitable for the cities and smaller areas.
-- The uncertainties of the climate data scenarios data
+All 3 methodologies are based on the EURO-CORDEX climate projections data, which has the following limitations:
+- The resolution of 12x12 km is not suitable for the cities and smaller areas, the dataset does not take into account e.g. the urban heat-island effect.
+- There are inherent uncertainties to the climate scenario data.
 
-## 2. Risk assessment 
+### Risk assessment methodology
+Under climate change, heatwaves in Europe are expected to occur more frequently. One of the main negative impacts due to heatwaves is the overheating of the urban areas, which lowers the comfort of living and can pose a threat to human health, especially in vulnerable population, but also droughts and water scarcity (see also: [Integrated Assessment of Urban Overheating Impacts on Human Life](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002682)). 
 
-Based on the current climate scenarios the occurrence of the heat-wave phenomenon should be more frequent in the future in Europe. The main problems connected with Heat-wave events are the overheating of the urban areas, which lowers the comfort of living or causes health issues [[Integrated Assessment of Urban Overheating Impacts on Human Life](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002682)], drought, and water scarcity. Nowadays, there are a lot of studies and methodologies on how we can mitigate the influence of these events. For 
+In the risk assessment presented in this workflow, we focus on estimating risk based on population exposure and vulnerability, combined with high-resolution observation data for the temperature (hazard). By combining this assessment with the hazard assessment on changes in future heatwave frequency, it is possible to better estimate the future risks.
 
-In the risk assessment, we focused on the estimation of the exposure and vulnerability which was based on the observed data. You can also see the probability of the heat-wave occurrence from the hazard assessment.
+As output of the risk assessment, you obtain information about the overheated areas, overlapping with information on the vulnerable population groups. You can also use the vegetation characteristics data to see the influence of the current heat wave events on the vegetation. 
 
-- **Exposure**: Heat islands (identification of the overheated places, place most exposed to the heat)
-- **Vulnerability**: Vulnerable population (people over 65 and under 5 years old)
-- **Risk = Exposure x Vulnerability**
-- You need to consider the **Probability** from the results of the Hazard workflow. However, due to the coarse resolution of Hazard data, we did not implement it in the Risk equation, because you will not see any differences in the different parts of the cities. 
-
-For the risk assessment, we use the 5x5 risk matrix:
+<span style="color:red">
+For the risk assessment, we use the 5x5 risk matrix (more explanation on how it was used?):
+</span>
 
 ![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/risk_matrix.png?raw=true "Risk matrix example")
 
-**Vegetation characteristics** = NDVI vegetation characteristics (current health condition of the vegetation)
+#### Risk assessments datasets and limitations
+In the risk assessment, we use information on heat islands based on the [Landsat8 satellite imagery](https://rslab.gr/Landsat_LST.html) to represent the **heat wave hazard**. This dataset estimates the land surface temperature with a spatial resolution of 30x30m for the period 2013-2021. This dataset is available with a 16-day time step. Please note that this is satellite-derived data and some inaccuracy can be caused by missing data on cloudy days.
 
-The Risk assessment results give you information about the overheated areas, places populated with vulnerable groups of the population. You can also use the vegetation characteristics data to see the influence of the current heat events on the vegetation. 
+**Exposure and vulnerability** are represented by the WorldPop dataset on vulnerable population groups (people older than 65 and people younger than 5 years old). The spatial resolution of this data is 100x100m. We use the data for the year 2020.
 
-We divided the NDVI into classes that represent the vegetation health based on the NDVI values [[source](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index)]:
+To estimate the influence of heat waves on vegetation, we use vegetation characteristics from [Sentinel2 satellite imagery](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE). This dataset provides the Normalized Difference Vegetation Index (NDVI) that we can use for the estimation of vegetation health. This dataset is available with 8-day timestep with a resolution of 10x10m.
+
+We divided the NDVI into classes that represent the vegetation health [based on the NDVI values](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index):
 
 ![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/ndvi_categories_example.png?raw=true "NDVI categories")
 
-**Data for Risk assessment**
 
-- **Exposure data**: Heat islands estimation from the Landsat8 satellite imagery [[source](https://rslab.gr/Landsat_LST.html)]
-  - Estimation of the Land surface temperature
-  - Resolution 30x30m
-  - Period: 2013-2021 (till now from Landsat9, need another processing)
-  - **Data limitations**: Problems with clouds, 16-day time step (not daily data) we can miss the hottest days, The resolution of 30x30 meters does not catch all  the details   
+### Structure of the workflow
+This workflow consists of several parts, where the user in guided in performing a risk assessment for heat waves. Separate notebooks are available for the three methods of heat wave hazard estimation, followed by the notebook for estimating risk to population and vegetation based on satellite data. 
 
-- **Vulnerability**: Vulnerable population groups (elderly people over 65 years and under 5 years) [[source](https://data.humdata.org/dataset/?dataseries_name=Data%20for%20Good%20at%20Meta%20-%20High%20Resolution%20Population%20Density%20Maps%20and%20Demographic%20Estimates&dataseries_name=WorldPop%20-%20Age%20and%20sex%20structures&dataseries_name=WorldPop%20-%20Population%20Density&groups=svk&res_format=GeoTIFF&q=&sort=last_modified%20desc&ext_page_size=25)]
-  - Data from the WorldPop website
-  - Resolution 100x100m
-  - **Data limitations**: Resolution of 100x100m, data for the year 2020 (might have changed), but you can use your data. 
+In the next pages you will find:
+1. Heat wave hazard assessment using EuroHEAT methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_euroheat.ipynb))    
+2. Heat wave hazard assessment using Peseta IV methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_pesetaiv.ipynb) 
+3. Heat wave hazard assessment using Xclim methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_xclim.ipynb) 
+4. Risk assessment using satellite-derived data ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_risk_assessment.ipynb))
 
-- **Vegetation characteristics** data from Sentinel2 satellite imagery [[source](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE)]
-  - Estimation of the Normalize Difference Vegetation Index (NDVI) for the estimation of vegetation health
-  - Resolution 10x10m 
-  - **Data limitations**: Problems with clouds, 8-day time step (not daily data), The resolution of 10x10 meters does not catch all details
+### Outputs of the workflow
 
-## References
+<span style="color:red">
+Please add a summary of what the user will obtain after going through the entire workflow. Think about how this can be useful to their CRA.
+</span>
 
-Euroheat: 11.6.2024
-[[source](https://confluence.ecmwf.int/display/CKB/Heat+waves+and+cold+spells+in+Europe+derived+from+climate+projections+documentation#heading-3References)]
 
-Peseta IV: 11.6.2024
-[[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]
+### Authors of the workflow
+This workflow was developed by [KAJO services](https://www.kajoservices.com/). Main contributors to the workflow are:
 
-XCLIM: 11.6.2024
-[[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]
+Martin Kuban, KAJO services.
+Milan Kalas, KAJO services.
 
-RSLAB, Land surface Temperature, based on the Landsat8 imagery: 11.6.2024
-[[source](https://rslab.gr/Landsat_LST.html)]
+### References
 
-Humdata: world population data. Distribution of the critical groups of the population. 11.6.2024
-[[source](https://data.humdata.org/dataset/?dataseries_name=Data%20for%20Good%20at%20Meta%20-%20High%20Resolution%20Population%20Density%20Maps%20and%20Demographic%20Estimates&dataseries_name=WorldPop%20-%20Age%20and%20sex%20structures&dataseries_name=WorldPop%20-%20Population%20Density&groups=svk&res_format=GeoTIFF&q=&sort=last_modified%20desc&ext_page_size=25)]
+Euroheat: 11.6.2024 [[source](https://confluence.ecmwf.int/display/CKB/Heat+waves+and+cold+spells+in+Europe+derived+from+climate+projections+documentation#heading-3References)]
 
-Copernicus browser: Sentinel2 LA2 immagery for the estimation of the NDVI. 11.6.2024
-[[source](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE)]
+Peseta IV: 11.6.2024 [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]
+
+XCLIM: 11.6.2024 [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]
+
+RSLAB, Land surface Temperature, based on the Landsat8 imagery: 11.6.2024 [[source](https://rslab.gr/Landsat_LST.html)]
+
+<span style="color:red">
+Humdata: world population data. Distribution of the critical groups of the population. 11.6.2024 [[source](https://data.humdata.org/dataset/?dataseries_name=Data%20for%20Good%20at%20Meta%20-%20High%20Resolution%20Population%20Density%20Maps%20and%20Demographic%20Estimates&dataseries_name=WorldPop%20-%20Age%20and%20sex%20structures&dataseries_name=WorldPop%20-%20Population%20Density&groups=svk&res_format=GeoTIFF&q=&sort=last_modified%20desc&ext_page_size=25)]
+</span>
+
+
+Copernicus browser: Sentinel2 LA2 immagery for the estimation of the NDVI. 11.6.2024 [[source](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE)]
 
 Cropinn: NDVI classes. 11.6.2024 [[source](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index)]
-
-## Authors
-
-Martin Kuban, KAJO services. [[link](https://www.kajoservices.com/)]
-Milan Kalas, KAJO services. [[link](https://www.kajoservices.com/)]
+ 
