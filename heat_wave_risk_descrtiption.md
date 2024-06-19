@@ -11,7 +11,7 @@ To assess the heatwave hazard, we use three different methodologies: EuroHEAT, P
  [EuroHEAT](https://climate-adapt.eea.europa.eu/en/metadata/tools/euroheat-online-heatwave-forecast) defines the heatwave as a period where the maximum apparent and the minimum temperature are over the 90th percentile of the monthly distribution for at least two days. The monthly distribution is based on 30-year timeseries of daily temperatures in the recent historical climate (1971-2000).
 
 <span style="color:red">
-[Peseta IV](https://joint-research-centre.ec.europa.eu/peseta-projects/jrc-peseta-iv_en) - defines a heatwave as a period at least 3 consecutive days with the maximum daily temperature above the threshold calculated for a 30 year reference period. - how is the threshold calculated?s
+[Peseta IV](https://joint-research-centre.ec.europa.eu/peseta-projects/jrc-peseta-iv_en) defines a heatwave as a period at least 3 consecutive days with the maximum daily temperature above the threshold calculated for a 30 year reference period. - how is the threshold calculated?s
 </span>
 
 [Xclim](https://xclim.readthedocs.io/en/stable/indicators.html) project defines  a heatwave based on user-defined absolute temperature thresholds for the maximum and minimum daily temperatures (i.e. day and night temperatures), and a mimimum time duration (e.g. 2 or 3 days). Using absolute thresholds for temperature requires input in terms of temperature thresholds, which are typically specific to a region and based on expected health impacts.
