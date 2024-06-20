@@ -11,7 +11,8 @@ To assess the heatwave hazard, we use three different methodologies: EuroHEAT, P
  [EuroHEAT](https://climate-adapt.eea.europa.eu/en/metadata/tools/euroheat-online-heatwave-forecast) defines the heatwave as a period where the maximum apparent and the minimum temperature are over the 90th percentile of the monthly distribution for at least two days. The monthly distribution is based on 30-year timeseries of daily temperatures in the recent historical climate (1971-2000).
 
 <span style="color:red">
-[Peseta IV](https://joint-research-centre.ec.europa.eu/peseta-projects/jrc-peseta-iv_en) - defines a heatwave as a period at least 3 consecutive days with the maximum daily temperature above the threshold calculated for a 30 year reference period. - how is the threshold calculated?s
+ 
+[Peseta IV](https://joint-research-centre.ec.europa.eu/peseta-projects/jrc-peseta-iv_en) Specifically, a heatwave is defined as a period ≥ 3 consecutive days with a maximum temperature above a daily threshold calculated for a 30-year-long reference period (for testing we choose a shorter period). At least a 30-year time series of daily values is needed to obtain a robust estimation of the indicator. The threshold is defined as the 90th percentile of daily maxima temperature, centered on a 31-day window (we used a month). - how is the threshold calculated?s
 </span>
 
 [Xclim](https://xclim.readthedocs.io/en/stable/indicators.html) project defines  a heatwave based on user-defined absolute temperature thresholds for the maximum and minimum daily temperatures (i.e. day and night temperatures), and a mimimum time duration (e.g. 2 or 3 days). Using absolute thresholds for temperature requires input in terms of temperature thresholds, which are typically specific to a region and based on expected health impacts.
@@ -23,11 +24,10 @@ As a result of the hazard assessment, we can obtain information about the heatwa
 #### Hazard datasets and limitations
 Methodologies Peseta IV and Xclim are applied in this workflow based on [EURO-CORDEX data](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form).
 
-Heat wave data prepared by the EuroHEAT project is directly available from the [dedicated dataset](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-heat-and-cold-spells?tab=form) on the Copernicus Data Store. This data was also prepared based on EURO-CORDEX data.
+Heatwave data prepared by the EuroHEAT project is directly available from the [dedicated dataset](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-heat-and-cold-spells?tab=form) on the Copernicus Data Store. This data was also prepared based on EURO-CORDEX data.
 
-All 3 methodologies are based on the EURO-CORDEX climate projections data, which has the following limitations:
-- The resolution of 12x12 km is not suitable for the cities and smaller areas, the dataset does not take into account e.g. the urban heat-island effect.
-- There are inherent uncertainties to the climate scenario data.
+All 3 methodologies are based on the EURO-CORDEX climate projections data, the resolution of 12x12 km is not suitable for the cities and smaller areas, the dataset does not take into account e.g. the urban heat-island effect.
+
 
 ### Risk assessment methodology
 Under climate change, heatwaves in Europe are expected to occur more frequently. One of the main negative impacts due to heatwaves is the overheating of the urban areas, which lowers the comfort of living and can pose a threat to human health, especially in vulnerable population, but also droughts and water scarcity (see also: [Integrated Assessment of Urban Overheating Impacts on Human Life](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002682)). 
