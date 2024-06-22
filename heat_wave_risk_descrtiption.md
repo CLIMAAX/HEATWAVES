@@ -28,6 +28,26 @@ Heatwave data prepared by the EuroHEAT project is directly available from the [d
 
 All 3 methodologies are based on the EURO-CORDEX climate projections data, the resolution of 12x12 km is not suitable for the cities and smaller areas, the dataset does not take into account e.g. the urban heat-island effect.
 
+#### Other heatwave hazard related online products
+
+**Copernicus Climate Data store CDS:**
+
+1. **Heat wave days and heat related mortality for nine European cities** (Valencia, Barcelona, Roma, Milan, Munich, Paris, Athens, London Budapest) derived from climate projections [[source](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-urban-heat-related-mortality-projections?tab=app)]
+
+2. **Heat wave days for Europe derived from ERA5 reanalysis** - NUTS 3 level [[source](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-heat-waves-current-climate?tab=app)]
+    - This application allows users to explore the number of heat waves in European countries based on the ERA5 hourly data on single levels dataset.
+A heat wave is a prolonged period of high temperature, relative to the region. A number of qualifying definitions of heat waves are used in the climate and health communities. This application presents two European-wide definitions: the Climatological EURO-CORDEX and Euroheat project , and one set of National definitions which are available for a limited number of European countries.
+
+3. **Heat wave days for European countries derived from climate projections** [[source](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-heat-waves-projections?tab=app)]
+    - This application is an exploratory tool for the Heat waves and cold spells in Europe derived from climate projections dataset. This dataset provides 30 year rolling means of the number of heat wave days based on bias adjusted output from the EURO-CORDEX ensemble of climate models.
+A heat wave is a prolonged period of high temperature, relative to the region. A number of qualifying definitions of heat waves are used in the climate and health communities. This application presents two European-wide definitions: the Climatological EURO-CORDEX and Euroheat project , and one set of National definitions which are available for a limited number of European countries.
+
+**Climate adapt**
+
+1. **Heat days occurrence in the past** [[Climate adapt heat days](https://climate-adapt.eea.europa.eu/en/metadata/indicators/high-utci-days)]
+2. **Heat days occurrence in the future** [[Climate adapt heat wave](https://climate-adapt.eea.europa.eu/en/metadata/indicators/apparent-temperature-heatwave-days)]
+3. **Tropical nights** [[Climate adapt Tropical nights](https://climate-adapt.eea.europa.eu/en/observatory/++aq++metadata/indicators/tropical-nights/)]
+
 
 ### Risk assessment methodology
 Under climate change, heatwaves in Europe are expected to occur more frequently. One of the main negative impacts due to heatwaves is the overheating of the urban areas, which lowers the comfort of living and can pose a threat to human health, especially in vulnerable population, but also droughts and water scarcity (see also: [Integrated Assessment of Urban Overheating Impacts on Human Life](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002682)). 
