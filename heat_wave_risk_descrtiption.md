@@ -28,8 +28,11 @@ Heatwave data prepared by the EuroHEAT project is directly available from the [d
 
 All 3 methodologies are based on the EURO-CORDEX climate projections data, the resolution of 12x12 km is not suitable for the cities and smaller areas, the dataset does not take into account e.g. the urban heat-island effect.
 
-#### Other heatwave hazard related online products
+#### Other heatwave hazard-related online products
 
+- You can also find other sources of heat-wave-related products available online. This part provides you with a quick overview of other available data 
+- The biggest difference between data provided online and results provided with this notebook is the resolution of the results, data provided with the Climaax toolbox have more precise resolution than online products. With the Climaax toolbox, you also have the possibility of changing the thresholds that define the heat-wave events (the threshold for temperature and time duration), while the online product has a fixed treshold value
+  
 **Copernicus Climate Data store CDS:**
 
 1. **Heat wave days and heat related mortality for nine European cities** (Valencia, Barcelona, Roma, Milan, Munich, Paris, Athens, London Budapest) derived from climate projections [[source](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-urban-heat-related-mortality-projections?tab=app)]
