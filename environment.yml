@@ -21,14 +21,11 @@ dependencies:
     - pyproj
     - cfgrib
     - scipy
-    - sklearn
+    - scikit-learn
     - ipyleaflet
     - ipywidgets
     - leafmap
     - localtileserver
-    - datetime
-    - json
-    - random
     - requests
     - rasterstats
     - plotly
