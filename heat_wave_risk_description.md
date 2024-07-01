@@ -60,42 +60,34 @@ In the risk assessment presented in this workflow, we focus on estimating risk b
 
 As output of the risk assessment, you obtain information about the overheated areas, overlapping with information on the vulnerable population groups. You can also use the vegetation characteristics data to see the influence of the current heat wave events on the vegetation.
 
-<span style="color:red">
-For the risk assessment, we use the 5x5 risk matrix (more explanation on how it was used?):
-</span>
+We use the 5x5 risk matrix for the risk assessment, which consists of exposure (most exposed places by heat, land surface temperature data) and vulnerability data (vulnerable population groups, world population data). The heat exposure data were divided into 5 groups based on the land surface temperature thresholds (1. Very low <20°C, 2. Low > 20°C, Medium > 30°C, High > 40°C, Very High > 50°C), these thresholds can be changed and values will depend on the selected area (more information in the risk assessment workflow). The vulnerability data were divided into 5 equal interval groups based on the selected area.  
 
 ![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/risk_matrix.png?raw=true "Risk matrix example")
 
-#### Risk assessments datasets and limitations
-In the risk assessment, we use information on heat islands based on the [Landsat8 satellite imagery](https://rslab.gr/Landsat_LST.html) to represent the **heat wave hazard**. This dataset estimates the land surface temperature with a spatial resolution of 30x30m for the period 2013-2021. This dataset is available with a 16-day time step. Please note that this is satellite-derived data and some inaccuracy can be caused by missing data on cloudy days.
+#### Risk assessment datasets and limitations
 
-**Exposure and vulnerability** are represented by the WorldPop dataset on vulnerable population groups (people older than 65 and people younger than 5 years old). The spatial resolution of this data is 100x100m. We use the data for the year 2020.
+In the risk assessment, we use the information on heat islands based on the [Landsat8 satellite imagery](https://rslab.gr/Landsat_LST.html) to represent the **Exposure**. This dataset estimates the land surface temperature with a spatial resolution of 30x30m for the period 2013-2021. This dataset is available with a 16-day time step. Please note that this is satellite-derived data and some inaccuracy can be caused by missing data on cloudy days.
 
-To estimate the influence of heat waves on vegetation, we use vegetation characteristics from [Sentinel2 satellite imagery](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE). This dataset provides the Normalized Difference Vegetation Index (NDVI) that we can use for the estimation of vegetation health. This dataset is available with 8-day timestep with a resolution of 10x10m.
-
-We divided the NDVI into classes that represent the vegetation health [based on the NDVI values](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index):
-
-![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/ndvi_categories_example.png?raw=true "NDVI categories")
+**Vulnerability** is represented by the WorldPop dataset on vulnerable population groups (people older than 65 and people younger than 5 years old). The spatial resolution of this data is 100x100m. We use the data for the year 2020.
 
 
 ## Structure of the workflow
-This workflow consists of several parts, where the user in guided in performing a risk assessment for heat waves. Separate notebooks are available for the three methods of heat wave hazard estimation, followed by the notebook for estimating risk to population and vegetation based on satellite data.
+This workflow consists of several parts, where the user is guided in performing a risk assessment for heat waves. Separate notebooks are available for the three methods of heat wave hazard estimation, followed by the notebook for estimating risk to population and vegetation based on satellite data.
 
 In the next pages you will find:
-1. Heat wave hazard assessment using EuroHEAT methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_euroheat.ipynb))
-2. Heat wave hazard assessment using Peseta IV methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_pesetaiv.ipynb)
-3. Heat wave hazard assessment using Xclim methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_xclim.ipynb)
+1. Heatwave hazard assessment using EuroHEAT methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_euroheat.ipynb))
+2. Heatwave hazard assessment using Peseta IV methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_pesetaiv.ipynb)
+3. Heatwave hazard assessment using Xclim methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_xclim.ipynb)
 4. Risk assessment using satellite-derived data ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_risk_assessment.ipynb))
 
 ## Outputs of the workflow
 
-<span style="color:red">
-Please add a summary of what the user will obtain after going through the entire workflow. Think about how this can be useful to their CRA.
-</span>
+The heatwave hazard workflow gives you the information about the heatwave occurrence in monthly and yearly time steps for the reference period 1971-2000 and projections periods 2011-2040, 2041-2070, and 2071-2100 under two climate scenarios rcps 4.5 and 8.5. This workflow allows you to change the temperature and duration thresholds that specify the heatwave events. You can then discuss which thresholds are best for your area. These results provide you the information on how often you can expect heatwaves in the future. The month's results show the possible seasonal changes in the future (warmer summers or winters?). The duration of the heatwave days is also important to estimate possible heatwave events severity. 
 
+The heatwave risk workflow provides you with information important to estimate which areas are most exposed to the heat, and with the combination of the distribution of the vulnerable groups of the population, you can create a risk map for your selected area. Together with the results of the hazard workflow, you will get comprehensive heat-connected information for present and future climate. 
 
 ## Authors of the workflow
-This workflow was developed by [KAJO services](https://www.kajoservices.com/). Main contributors to the workflow are:
+This workflow was developed by [KAJO services](https://www.kajoservices.com/). The main contributors to the workflow are:
 
 Martin Kuban, KAJO services.
 Milan Kalas, KAJO services.
@@ -115,7 +107,7 @@ Humdata: world population data. Distribution of the critical groups of the popul
 </span>
 
 
-Copernicus browser: Sentinel2 LA2 immagery for the estimation of the NDVI. 11.6.2024 [[source](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE)]
+Copernicus browser: Sentinel2 LA2 imagery for the estimation of the NDVI. 11.6.2024 [[source](https://browser.dataspace.copernicus.eu/?zoom=15&lat=49.19843&lng=18.72718&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fa91f72b5-f393-4320-bc0f-990129bd9e63&datasetId=S2_L2A_CDAS&fromTime=2019-08-31T00%3A00%3A00.000Z&toTime=2019-08-31T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE)]
 
 Cropinn: NDVI classes. 11.6.2024 [[source](https://www.cropin.com/blogs/ndvi-normalized-difference-vegetation-index)]
 
