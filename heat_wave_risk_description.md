@@ -4,7 +4,7 @@
 
 This workflow is designed to help in exploring the local and regional risks presented by heatwaves, and assessing the impact of climate change on the heatwave hazard.
 
-A heatwave is defined by the maximum daily temperature exceeding a certain threshold for a certain minimum amount of time. Various definitions are used in different methodologies for heatwave risk assessments, and in this workflow we will explore the heatwave hazard based on several commonly used methodologies. The risk assessment focuses on the health risks presented to vulnerable population (elderly people).
+A heatwave is defined by the maximum daily temperature exceeding a certain threshold for a certain minimum amount of time. Various definitions are used in different methodologies for heatwave risk assessments, and in this workflow we will explore the heatwave hazard based on several commonly used methodologies. The risk assessment focuses on the health risks presented to vulnerable population.
 
 ### Heatwave hazard assessment under climate change
 
@@ -57,13 +57,13 @@ In the risk assessment example presented in this workflow, we focus on estimatin
 
 As output of the risk assessment, you obtain information about the overheated areas, overlapping with information on the vulnerable population groups. You can also use the vegetation characteristics data to see the influence of the current heat wave events on the vegetation.
 
-We use the 5x5 risk matrix for the risk assessment, which consists of exposure (most exposed places by heat, land surface temperature data) and vulnerability data (vulnerable population groups, world population data). The heat exposure data were divided into 5 groups based on the land surface temperature thresholds (1. Very low <20°C, 2. Low > 20°C, Medium > 30°C, High > 40°C, Very High > 50°C), these thresholds can be changed and values will depend on the selected area (more information in the risk assessment workflow). The vulnerability data were divided into 5 equal interval groups based on the selected area.  
+To assess risk, we use a 5x5 risk matrix, which consists of exposure (level of exposure to heat based on land surface temperature data) and vulnerability (vulnerable population groups based on world population data). The heat exposure data were divided into 5 groups based on the land surface temperature thresholds (1. Very low <20°C, 2. Low > 20°C, Medium > 30°C, High > 40°C, Very High > 50°C), these thresholds can be changed and values will depend on the selected area (more information in the risk assessment workflow). The vulnerability data were divided into 5 equally-spaced intervals based on the selected area.  
 
 ![Heat-wave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/risk_matrix.png?raw=true "Risk matrix example")
 
 #### Risk assessment datasets and limitations
 
-In the risk assessment, we use the information on heat islands based on the [Landsat8 satellite imagery](https://rslab.gr/Landsat_LST.html) to represent the **Exposure**. This dataset estimates the land surface temperature with a spatial resolution of 30x30m for the period 2013-2021. This dataset is available with a 16-day time step. Please note that this is satellite-derived data and some inaccuracy can be caused by missing data on cloudy days.
+In the risk assessment, we use the information on heat islands based on the [Landsat8 satellite imagery](https://rslab.gr/Landsat_LST.html) to represent **exposure**. This dataset estimates the land surface temperature with a spatial resolution of 30x30m for the period 2013-2021. This dataset is available with a 16-day time step. Please note that this is satellite-derived data and some inaccuracy can be caused by missing data on cloudy days.
 
 **Vulnerability** is represented by the WorldPop dataset on vulnerable population groups (people older than 65 and people younger than 5 years old). The spatial resolution of this data is 100x100m. We use the data for the year 2020.
 
@@ -79,15 +79,16 @@ In the next pages you will find:
 
 ## Outputs of the workflow
 
-The heatwave hazard workflow gives you the information about the heatwave occurrence in monthly and yearly time steps for the reference period 1971-2000 and projections periods 2011-2040, 2041-2070, and 2071-2100 under two climate scenarios rcps 4.5 and 8.5. This workflow allows you to change the temperature and duration thresholds that specify the heatwave events. You can then discuss which thresholds are best for your area. These results provide you the information on how often you can expect heatwaves in the future. The month's results show the possible seasonal changes in the future (warmer summers or winters?). The duration of the heatwave days is also important to estimate possible heatwave events severity. 
+The heatwave **hazard** workflow gives you the information about the heatwave occurrence at a monthly and/or yearly temporal resolution, with the reference period of 1971-2000 and future periods of 2011-2040, 2041-2070, and 2071-2100 under two climate scenarios: RCP4.5 and RCP8.5. This workflow allows you to modify the temperature and duration thresholds that specify the heatwave events according to your needs, you can define which thresholds are best suited for your region. The results provide you the information on how often you can expect heatwaves in the future. The monthly results show the possible seasonal changes in the future (e.g. hot/warm spells during summer or winter seasons). The duration of the heatwaves (in days) is also important to estimate possible heatwave events severity. 
 
-The heatwave risk workflow provides you with information important to estimate which areas are most exposed to the heat, and with the combination of the distribution of the vulnerable groups of the population, you can create a risk map for your selected area. Together with the results of the hazard workflow, you will get comprehensive heat-connected information for present and future climate. 
+The heatwave **risk** workflow provides you with information important to estimate which areas in your region are most exposed to the heat. By combining this with the distribution of vulnerable groups of the population, you can create a risk map for your selected area. Together with the results of the hazard workflow, you will get information both on the future heatwave hazard and the areas most exposed to this hazard under the current and future climate. 
 
 ## Authors of the workflow
 This workflow was developed by [KAJO services](https://www.kajoservices.com/). The main contributors to the workflow are:
 
 Martin Kuban, KAJO services.
 Milan Kalas, KAJO services.
+Natalia Aleksandrova, Deltares.
 
 ## References
 
