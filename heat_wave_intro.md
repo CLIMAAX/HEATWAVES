@@ -1,5 +1,4 @@
-# Heatwaves
-## Workflow for heatwave risk assessment under climate scenarios
+# Workflow for heatwave risk assessment under climate scenarios
 
 A heatwave is a prolonged period of abnormally hot weather. There are different approaches to defining a heatwave. But in general, a heatwave is determined using thresholds for air temperature and its persistency (minimum duration as a number of days). The most common definition of a heatwave is the occurrence of multiple consecutive days with the maximum air temperature over a certain threshold. In some methodologies thresholds are also defined for the minimum air temperature.
 
