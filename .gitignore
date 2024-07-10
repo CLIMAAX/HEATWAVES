@@ -1,5 +1,6 @@
 #Data directory
-**/data/
+**/Heatwave_risk/
+**/Heatwave_hazard*/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
