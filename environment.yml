@@ -4,37 +4,25 @@ channels:
     - conda-forge
 
 dependencies:
-    - python=3.11
-    - rasterio
-    - pathlib
-    - rioxarray
-    - cdsapi
-    - numpy
-    - pandas
-    - xarray
-    - xarray-spatial
-    - cartopy
-    - matplotlib
-    - gdal
-    - jupyterlab
-    - geopandas
-    - pyproj
-    - cfgrib
-    - scipy
-    - scikit-learn
-    - ipyleaflet
-    - ipywidgets
-    - leafmap
-    - localtileserver
-    - requests
-    - rasterstats
-    - plotly
-    - folium
-    - branca
+    - cartopy=0.23.0
+    - cdsapi=0.7.0
+    - dask=2024.7.0
+    - flask=2.3.3
+    - ipykernel=6.29.5
+    - ipyleaflet=0.19.1
+    - ipywidgets=8.1.3
+    - jupyter-server-proxy=4.3.0
+    - jupyterlab-myst=2.4.2
+    - jupyterlab=4.2.3
+    - localtileserver=0.10.3
+    - matplotlib=3.8.4
+    - netcdf4=1.7.1
+    - numpy=1.26.4
+    - pandas=2.2.2
     - pip
-
-    - pip:
-        - netcdf4
-        - damagescanner
-        - jupyterlab_myst
-          
+    - plotly=5.22.0
+    - python=3.11
+    - rasterio=1.3.10
+    - rioxarray=0.15.7
+    - xarray=2024.6.0
+    - xclim=0.50.0
