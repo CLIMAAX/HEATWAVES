@@ -8,6 +8,7 @@ dependencies:
     - cdsapi=0.7.0
     - dask=2024.7.0
     - flask=2.3.3
+    - geopandas=1.0.1
     - ipykernel=6.29.5
     - ipyleaflet=0.19.1
     - ipywidgets=8.1.3
