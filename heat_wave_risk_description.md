@@ -31,24 +31,22 @@ This application is an exploratory tool for future heat waves and cold spells de
  - [Occurence of tropical nights under future climate scenarios](https://climate-adapt.eea.europa.eu/en/observatory/++aq++metadata/indicators/tropical-nights/)
 
 #### CLIMAAX workflow: hazard assessment using EURO-CORDEX climate data
-In the CLIMAAX workflow on (following pages) we demonstrate how EURO-CORDEX data can be processed to assess heatwave hazard using different methodologies, namely: EuroHEAT, Peseta IV and Xclim. The user can choose to apply one of these methodologies based on their preferred heatwave definition. The methodologies differ in terms of the required input data, temperature tresholds, duration thresholds, computing algorithm, and results.
+In the CLIMAAX workflow (in the following pages) we demonstrate how EURO-CORDEX data can be processed to assess heatwave hazard using two different methodologies: EuroHEAT and Xclim. The user can choose to apply one of these methodologies based on their preferred heatwave definition. The methodologies differ in terms of the required input data, temperature tresholds, duration thresholds, computing algorithm, and results.
 
  [EuroHEAT](https://climate-adapt.eea.europa.eu/en/metadata/tools/euroheat-online-heatwave-forecast) defines the heatwave as a period where the maximum apparent and the minimum temperature are over the 90th percentile of the monthly distribution for at least two days. The monthly distribution is based on 30-year timeseries of daily temperatures in the recent historical climate (1971-2000).
 
-[Peseta IV](https://joint-research-centre.ec.europa.eu/peseta-projects/jrc-peseta-iv_en) defines a heatwave as a period ≥ 3 consecutive days with a maximum temperature above a daily threshold calculated for a 30-year-long reference period (for testing we choose a shorter period). At least a 30-year timeseries of daily temperatures are needed to obtain a robust estimation of the indicator. The threshold is defined as the 90th percentile of daily maximum temperature, centered on a 31-day window (we used a month).
-
 [Xclim](https://xclim.readthedocs.io/en/stable/indicators.html) project defines  a heatwave based on user-defined absolute temperature thresholds for the maximum and minimum daily temperatures (i.e. day and night temperatures), and a mimimum time duration (e.g. 2 or 3 days). Using absolute thresholds for temperature requires input in terms of temperature thresholds, which are typically specific to a region and based on expected health impacts.
 
-Each methodology is demonstrated in this workflow using air temperature data from EURO-CORDEX as input. We use the climate scenarios RCP4.5 (medium) and RCP8.5 (extreme) to compare the effect of different climate scenarios ([more about RCPs](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)).
+We use the climate scenarios RCP4.5 (medium) and RCP8.5 (extreme) to compare the effect of different climate scenarios ([more about RCPs](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)).
 
-As a result of the hazard assessment, we can obtain information about the heatwave frequency of occurrence in the reference period of 1971-2000 and three future periods: 2011-2040, 2041-2070 and 2071-2100. This result is based on model data for climate projections. In all methods yearly frequency of heatwaves is calculated, and monthly frequencies are also calculated in the Peseta IV methodology.
+As a result of the hazard assessment, we can obtain information about the heatwave frequency of occurrence in the reference period of 1971-2000 and three future periods: 2011-2040, 2041-2070 and 2071-2100. This result is based on model data for climate projections. 
 
 ##### Source datasets in this workflow
-Methodologies Peseta IV and Xclim are applied in this workflow based on [EURO-CORDEX data](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form).
+ Xclim methodology in this workflow uses the [EURO-CORDEX data](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form).
 
 Heatwave data prepared by the EuroHEAT project is directly available from the [dedicated dataset](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-heat-and-cold-spells?tab=form) on the Copernicus Data Store. This data is also based on EURO-CORDEX data.
 
-All 3 methodologies are thus based on the EURO-CORDEX climate projections data. Please note that the resolution of this data is 12x12km, and it is not suitable for accurately evaluating heat wave risks inside cities, because the dataset does not take into account the urban heat-island effect.
+Both methodologies are thus based on the EURO-CORDEX climate projections data. Please note that the resolution of this data is 12x12km, and it is not suitable for accurately evaluating heat wave risks inside cities, because the dataset does not take into account the urban heat-island effect.
 
 ### Risk assessment methodology based on historical high-resolution data
 One of the main negative impacts due to heatwaves is the overheating of the urban areas, which lowers the comfort of living and can pose a threat to human health, especially in vulnerable population, but also droughts and water scarcity (see also: [Integrated Assessment of Urban Overheating Impacts on Human Life](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022EF002682)).
@@ -73,9 +71,8 @@ This workflow consists of several parts, where the user is guided in performing 
 
 In the next pages you will find:
 1. Heatwave hazard assessment using EuroHEAT methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_euroheat.ipynb))
-2. Heatwave hazard assessment using Peseta IV methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_pesetaiv.ipynb)
-3. Heatwave hazard assessment using Xclim methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_xclim.ipynb)
-4. Risk assessment using satellite-derived data ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_risk_assessment.ipynb))
+2. Heatwave hazard assessment using Xclim methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_xclim.ipynb)
+3. Risk assessment using satellite-derived data ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_risk_assessment.ipynb))
 
 ## Outputs of the workflow
 
