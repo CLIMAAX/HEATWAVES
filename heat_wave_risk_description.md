@@ -39,12 +39,12 @@ In the CLIMAAX workflow (in the following pages) we demonstrate how EURO-CORDEX 
 
 We use the climate scenarios RCP4.5 (medium) and RCP8.5 (extreme) to compare the effect of different climate scenarios ([more about RCPs](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)).
 
-As a result of the hazard assessment, we can obtain information about the heatwave frequency of occurrence in the reference period of 1971-2000 and three future periods: 2011-2040, 2041-2070 and 2071-2100. This result is based on model data for climate projections. 
+As a result of the hazard assessment, we can obtain information about the heatwave frequency of occurrence in the reference period of 1971-2000 and three future periods: 2011-2040, 2041-2070 and 2071-2100. This result is based on model data for climate projections.
 
 ##### Source datasets in this workflow
- Xclim methodology in this workflow uses the [EURO-CORDEX data](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form).
+ Xclim methodology in this workflow uses the [EURO-CORDEX data](https://cds-beta.climate.copernicus.eu/datasets/projections-cordex-domains-single-levels?tab=overview).
 
-Heatwave data prepared by the EuroHEAT project is directly available from the [dedicated dataset](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-heat-and-cold-spells?tab=form) on the Copernicus Data Store. This data is also based on EURO-CORDEX data.
+Heatwave data prepared by the EuroHEAT project is directly available from the [dedicated dataset](https://cds-beta.climate.copernicus.eu/datasets/sis-heat-and-cold-spells?tab=overview) on the Copernicus Data Store. This data is also based on EURO-CORDEX data.
 
 Both methodologies are thus based on the EURO-CORDEX climate projections data. Please note that the resolution of this data is 12x12km, and it is not suitable for accurately evaluating heat wave risks inside cities, because the dataset does not take into account the urban heat-island effect.
 
@@ -91,9 +91,9 @@ Natalia Aleksandrova, Deltares.
 
 Euroheat: 11.6.2024 [[source](https://confluence.ecmwf.int/display/CKB/Heat+waves+and+cold+spells+in+Europe+derived+from+climate+projections+documentation#heading-3References)]
 
-Peseta IV: 11.6.2024 [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]
+Peseta IV: 11.6.2024 [[source](https://cds-beta.climate.copernicus.eu/datasets/projections-cordex-domains-single-levels?tab=overview)]
 
-XCLIM: 11.6.2024 [[source](https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-cordex-domains-single-levels?tab=form)]
+XCLIM: 11.6.2024 [[source](https://cds-beta.climate.copernicus.eu/datasets/projections-cordex-domains-single-levels?tab=overview)]
 
 RSLAB, Land surface Temperature, based on the Landsat8 imagery: 11.6.2024 [[source](https://rslab.gr/Landsat_LST.html)]
 
