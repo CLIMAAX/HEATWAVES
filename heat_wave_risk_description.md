@@ -4,14 +4,14 @@
 
 This workflow is designed to help in exploring the local and regional risks presented by heatwaves, and assessing the impact of climate change on the heatwave hazard.
 
-A heatwave is defined by the maximum daily temperature exceeding a certain threshold for a certain minimum amount of time. Various definitions are used in different methodologies for heatwave risk assessments, and in this workflow we will explore the heatwave hazard based on several commonly used methodologies. The risk assessment focuses on the health risks presented to vulnerable populations.
+A heatwave is defined by the maximum and minimum daily temperature exceeding a certain threshold for a certain minimum amount of time. Various definitions are used in different methodologies for heatwave risk assessments, and in this workflow, we will explore the heatwave hazard based on several commonly used methodologies. The risk assessment focuses on the health risks presented to vulnerable populations.
 
 ### Heatwave hazard assessment under climate change
 
 #### Heatwave hazard assessment open data products
 There are several applications available online that allow the user to explore heatwave hazards for European regions without the need to perform their own calculations. Below is an overview of such resources. We recommend to explore these resources first, before using the more detailed CLIMAAX workflow.
 
-The resources below provide information on heatwave indicators that are already aggregated to specific locations or regions using a specific methodology. This may not be sufficient for a more detailed assessment, which is why the CLIMAAX workflow is provided - it allows for more flexibility in analyzing the data with the possibility of selecting specific definitions of heatwave events (i.e. the thresholds for temperature and time duration) and defining your own area of interest. 
+The resources below provide information on heatwave indicators that are already aggregated to specific locations or regions using a specific methodology. This may not be sufficient for a more detailed assessment, which is why the CLIMAAX workflow is provided - it allows for more flexibility in analyzing the data with the possibility of selecting specific definitions of heatwave events (i.e. the thresholds for temperature and time duration) and defining your area of interest. 
 
 **Resources available on the Copernicus Climate Data Store (C3S):**
 
@@ -53,7 +53,7 @@ One of the main negative impacts of heatwaves is the overheating of the urban ar
 
 In the risk assessment example presented in this workflow, we focus on estimating risk based on population exposure and vulnerability, combined with high-resolution observation data for the temperature (hazard). By combining this assessment with the hazard assessment on changes in future heatwave frequency, it is possible to better estimate the future risks.
 
-As output of the risk assessment, you obtain information about the overheated areas, overlapping with information on the vulnerable population groups. You can also use the vegetation characteristics data to see the influence of the current heat wave events on the vegetation.
+As output of the risk assessment, you obtain information about the overheated areas, overlapping with information on the vulnerable population groups. 
 
 To assess risk, we use a 10+10 risk matrix, which consists of exposure (level of exposure to heat based on land surface temperature data) and vulnerability (vulnerable population groups based on world population data). The heat exposure data were divided into 10 groups based on the land surface temperature thresholds (1-2. Very low <20-25°C, 3-4. Low 25-35°C, 5-6. Medium 35-45°C, 7-8. High 45-55°C, 9-10. Very High 55-60<°C), these thresholds can be changed and values will depend on the selected area (more information in the risk assessment workflow). The vulnerability data were divided into 10 equally-spaced intervals based on the selected area.  
 
@@ -75,7 +75,7 @@ It is important to note that the level of risk is dependent on the area selected
 
 
 ## Structure of the workflow
-This workflow consists of several parts, where the user is guided in performing a risk assessment for heat waves. Separate notebooks are available for the three methods of heat wave hazard estimation, followed by the notebook for estimating risk to population and vegetation based on satellite data.
+This workflow consists of several parts, where the user is guided in performing a risk assessment for heat waves. Separate notebooks are available for the two methods of heat wave hazard estimation, followed by notebooks for estimating the level of risk to the population based on satellite data (local level), and the level of risk to the population based on the EuroHEAT data (regional level).
 
 In the next pages you will find:
 1. Heatwave hazard assessment using EuroHEAT methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/blob/review_edits/heat_wave_hazard_assessment_euroheat.ipynb))
