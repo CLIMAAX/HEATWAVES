@@ -11,6 +11,7 @@ dependencies:
     - geopandas=1.0.1
     - ipykernel=6.29.5
     - ipyleaflet=0.19.1
+    - ipython=8.27.0
     - ipywidgets=8.1.3
     - jupyter-server-proxy=4.3.0
     - jupyterlab-myst=2.4.2
