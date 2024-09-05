@@ -9,7 +9,7 @@ Part of the [Climate Risk Assessment Handbook](https://handbook.climaax.eu/noteb
 
 ## Workflows
 
-- [Urban heatwaves](.)
+- [Urban heatwaves](01_Urban_heatwaves/)
 
 
 ## How to run

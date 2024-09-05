@@ -78,10 +78,10 @@ It is important to note that the level of risk is dependent on the area selected
 This workflow consists of several parts, where the user is guided in performing a risk assessment for heat waves. Separate notebooks are available for the two methods of heat wave hazard estimation, followed by notebooks for estimating the level of risk to the population based on satellite data (local level), and the level of risk to the population based on the EuroHEAT data (regional level).
 
 In the next pages you will find:
-1. Heatwave hazard assessment using EuroHEAT methodology ([link to notebook on GitHub](heat_wave_hazard_assessment_euroheat.ipynb))
-2. Heatwave hazard assessment using Xclim methodology ([link to notebook on GitHub](heat_wave_hazard_assessment_xclim.ipynb))
-3. Risk assessment using satellite-derived data ([link to notebook on GitHub](heat_wave_risk_assessment.ipynb))
-4. Risk assessment based on climate projections ([link to notebook on GitHub](heatwave_risk_projected_change_Catalunya_example.ipynb))
+1. Heatwave hazard assessment using EuroHEAT methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/01_Urban_heatwaves/heatwave_hazard_assessment_euroheat.ipynb))
+2. Heatwave hazard assessment using Xclim methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/01_Urban_heatwaves/heatwave_hazard_assessment_xclim.ipynb))
+3. Risk assessment using satellite-derived data ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/01_Urban_heatwaves/heatwave_risk_assessment.ipynb))
+4. Risk assessment based on climate projections ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/01_Urban_heatwaves/heatwave_risk_projected_change_Catalunya_example.ipynb))
 
 ## Outputs of the workflow
 
