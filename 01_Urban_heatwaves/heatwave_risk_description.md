@@ -57,7 +57,7 @@ As output of the risk assessment, you obtain information about the overheated ar
 
 To assess risk, we use a 10+10 risk matrix, which consists of exposure (level of exposure to heat based on land surface temperature data) and vulnerability (vulnerable population groups based on world population data). The heat exposure data were divided into 10 groups based on the land surface temperature thresholds (1-2. Very low <20-25°C, 3-4. Low 25-35°C, 5-6. Medium 35-45°C, 7-8. High 45-55°C, 9-10. Very High 55-60<°C), these thresholds can be changed and values will depend on the selected area (more information in the risk assessment workflow). The vulnerability data were divided into 10 equally-spaced intervals based on the selected area.  
 
-![heatwave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/Images/risk_matrix_10to10.png?raw=true "Risk matrix example")
+![heatwave ilustration](https://github.com/CLIMAAX/HEATWAVES/blob/main/01_Urban_heatwaves/Images/risk_matrix_10to10.png?raw=true "Risk matrix example")
 
 #### Risk assessment datasets and limitations
 
