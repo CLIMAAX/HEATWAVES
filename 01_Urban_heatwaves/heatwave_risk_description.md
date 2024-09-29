@@ -13,17 +13,6 @@ There are several applications available online that allow the user to explore h
 
 The resources below provide information on heatwave indicators that are already aggregated to specific locations or regions using a specific methodology. This may not be sufficient for a more detailed assessment, which is why the CLIMAAX workflow is provided - it allows for more flexibility in analyzing the data with the possibility of selecting specific definitions of heatwave events (i.e. the thresholds for temperature and time duration) and defining your area of interest. 
 
-**Resources available on the Copernicus Climate Data Store (C3S):**
-
- - [Heat wave days and heat related mortality for nine European cities](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-urban-heat-related-mortality-projections?tab=app).
- Data for Valencia, Barcelona, Roma, Milan, Munich, Paris, Athens, London and  Budapest derived from climate projections.  
-
- - [Heat wave days for Europe derived from ERA5 reanalysis - NUTS 3 level](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-heat-waves-current-climate?tab=app). 
- This application allows users to explore the past number of heat waves in European countries based on the historical reanalysis (ERA5), where the heatwaves are defined using two European-wide definitions: the Climatological EURO-CORDEX and EuroHEAT project definition, and one set of National definitions which are available for a limited number of European countries.
-
- - [Heat wave days for European countries derived from climate projections](https://cds.climate.copernicus.eu/cdsapp#!/software/app-health-heat-waves-projections?tab=app)
-This application is an exploratory tool for future heat waves and cold spells derived from climate projections. This dataset provides 30-year rolling means of the number of heat wave days based on bias-adjusted output from the EURO-CORDEX ensemble of climate models.
-
 **Resources available from ClimateAdapt:**
 
  - [Heat days occurrence in the past based on the Universal Thermal Comfort Index](https://climate-adapt.eea.europa.eu/en/metadata/indicators/high-utci-days).
