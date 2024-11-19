@@ -30,3 +30,4 @@ dependencies:
     - xarray=2024.6.0
     - xclim=0.50.0
     - rasterstats=0.19.0
+    - werkzeug=3.0.6
