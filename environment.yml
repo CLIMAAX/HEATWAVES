@@ -5,7 +5,7 @@ channels:
 
 dependencies:
     - cartopy=0.23.0
-    - cdsapi=0.7.0
+    - cdsapi=0.7.5
     - dask=2024.7.0
     - flask=2.3.3
     - geopandas=1.0.1
