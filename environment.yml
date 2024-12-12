@@ -7,6 +7,7 @@ dependencies:
     - cartopy=0.23.0
     - cdsapi=0.7.0
     - dask=2024.7.0
+    - eodag=3.0.1
     - flask=2.3.3
     - geopandas=1.0.1
     - ipykernel=6.29.5
@@ -31,3 +32,5 @@ dependencies:
     - xclim=0.50.0
     - rasterstats=0.19.0
     - werkzeug=3.0.6
+    - pip:
+        - pylandtemp==0.0.1a1
