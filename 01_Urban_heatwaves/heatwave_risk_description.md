@@ -4,7 +4,12 @@
 
 This workflow is designed to help in exploring the local and regional risks presented by heatwaves, and assessing the impact of climate change on the heatwave hazard.
 
+<figure class="align-center">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lifpAD0oKCo?si=lkG_-6fXVG_xhIVy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</figure>
+
 A heatwave is defined by the maximum and minimum daily temperature exceeding a certain threshold for a certain minimum amount of time. Various definitions are used in different methodologies for heatwave risk assessments, and in this workflow, we will explore the heatwave hazard based on several commonly used methodologies. The risk assessment focuses on the health risks presented to vulnerable populations.
+
 
 ### Heatwave hazard assessment under climate change
 
