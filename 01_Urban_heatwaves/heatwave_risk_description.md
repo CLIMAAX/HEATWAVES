@@ -69,13 +69,15 @@ It is important to note that the level of risk is dependent on the area selected
 
 
 ## Structure of the workflow
+
 This workflow consists of several parts, where the user is guided in performing a risk assessment for heat waves. Separate notebooks are available for the two methods of heat wave hazard estimation, followed by notebooks for estimating the level of risk to the population based on satellite data (local level), and the level of risk to the population based on the EuroHEAT data (regional level).
 
 In the next pages you will find:
-1. Heatwave hazard assessment using EuroHEAT methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/01_Urban_heatwaves/heatwave_hazard_assessment_euroheat.ipynb))
-2. Heatwave hazard assessment using Xclim methodology ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/01_Urban_heatwaves/heatwave_hazard_assessment_xclim.ipynb))
-3. Risk assessment using satellite-derived data ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/01_Urban_heatwaves/heatwave_risk_assessment.ipynb))
-4. Risk assessment based on climate projections ([link to notebook on GitHub](https://github.com/CLIMAAX/HEATWAVES/01_Urban_heatwaves/heatwave_risk_projected_change_Catalunya_example.ipynb))
+1. [Heatwave hazard assessment using EuroHEAT methodology](heatwave_hazard_assessment_euroheat.ipynb)
+2. [Heatwave hazard assessment using Xclim methodology](heatwave_hazard_assessment_xclim.ipynb)
+3. [Risk assessment using satellite-derived data](heatwave_risk_assessment.ipynb)
+4. [Risk assessment based on climate projections](heatwave_risk_projected_change_Catalunya_example.ipynb)
+
 
 ## Outputs of the workflow
 
@@ -83,20 +85,20 @@ The heatwave **hazard** workflow gives you the information about the heatwave oc
 
 The heatwave **risk** workflow provides you with information important to estimate which areas in your region are most exposed to the heat. By combining this with the distribution of vulnerable groups of the population, you can create a risk map for your selected area. Together with the results of the hazard workflow, you will get information both on the future heatwave hazard and the areas most exposed to this hazard under the current and future climate. The risk assessment at the regional level provides information about the projected heatwave occurrence changes for the near and further future with the combination of the distribution of the vulnerable groups at the regional level. 
 
+
 ## Authors of the workflow
+
 This workflow was developed by [KAJO services](https://www.kajoservices.com/). The main contributors to the workflow are:
 
-Martin Kuban, KAJO services.
-Milan Kalas, KAJO services.
-Natalia Aleksandrova, Deltares.
+- Martin Kuban, KAJO services.
+- Milan Kalas, KAJO services.
+- Natalia Aleksandrova, Deltares.
+
 
 ## References
 
-Euroheat: 11.6.2024 [[source](https://confluence.ecmwf.int/display/CKB/Heat+waves+and+cold+spells+in+Europe+derived+from+climate+projections+documentation#heading-3References)]
-
-XCLIM: 11.6.2024 [[source](https://cds.climate.copernicus.eu/datasets/projections-cordex-domains-single-levels?tab=overview)]
-
-RSLAB, Land surface Temperature, based on the Landsat8 imagery: 11.6.2024 [[source](https://rslab.gr/Landsat_LST.html)]
-
-Humdata: world population data. Distribution of the critical groups of the population. 11.6.2024 [source](https://data.humdata.org/dataset/?dataseries_name=Data%20for%20Good%20at%20Meta%20-%20High%20Resolution%20Population%20Density%20Maps%20and%20Demographic%20Estimates&dataseries_name=WorldPop%20-%20Age%20and%20sex%20structures&dataseries_name=WorldPop%20-%20Population%20Density&groups=svk&res_format=GeoTIFF&q=&sort=last_modified%20desc&ext_page_size=25)
+- Euroheat: 11.6.2024 [[source](https://confluence.ecmwf.int/display/CKB/Heat+waves+and+cold+spells+in+Europe+derived+from+climate+projections+documentation#heading-3References)]
+- XCLIM: 11.6.2024 [[source](https://cds.climate.copernicus.eu/datasets/projections-cordex-domains-single-levels?tab=overview)]
+- RSLAB, Land surface Temperature, based on the Landsat8 imagery: 11.6.2024 [[source](https://rslab.gr/Landsat_LST.html)]
+- Humdata: world population data. Distribution of the critical groups of the population. 11.6.2024 [source](https://dx.doi.org/10.5258/SOTON/WP00646)
 
