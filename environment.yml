@@ -7,7 +7,6 @@ dependencies:
     - cartopy=0.23.0
     - cdsapi=0.7.5
     - dask=2024.7.0
-    - eodag=3.2.0
     - flask=2.3.3
     - geopandas=1.0.1
     - ipykernel=6.29.5
@@ -34,5 +33,6 @@ dependencies:
     - xarray=2024.6.0
     - xclim=0.50.0
     - pip:
+        - eodag==3.2.0
         - pylandtemp==0.0.1a1
         - git+https://github.com/kapadia/usgs.git@ec8b5e2e77cc020890d9dbab0fa46cb2d4867e44
