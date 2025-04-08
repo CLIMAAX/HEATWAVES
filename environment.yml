@@ -32,3 +32,7 @@ dependencies:
     - werkzeug=3.1.3
     - xarray=2024.6.0
     - xclim=0.50.0
+    - pip:
+        - eodag==3.2.0
+        - pylandtemp==0.0.1a1
+        - git+https://github.com/kapadia/usgs.git@ec8b5e2e77cc020890d9dbab0fa46cb2d4867e44
