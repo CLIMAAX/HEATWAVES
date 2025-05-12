@@ -2,6 +2,7 @@ name: climaax_heatwaves
 
 channels:
     - conda-forge
+    - nodefaults
 
 dependencies:
     - boto3=1.37.33  # eodag dependency
