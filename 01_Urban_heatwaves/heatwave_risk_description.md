@@ -22,7 +22,7 @@ The resources below provide information on heatwave indicators that are already 
 
  - [Heat days occurrence in the past based on the Universal Thermal Comfort Index](https://climate-adapt.eea.europa.eu/en/metadata/indicators/high-utci-days).
  - [Heat days occurrence in the future climate scenarios based on the Apparent Temperature Heatwave Days Index](https://climate-adapt.eea.europa.eu/en/metadata/indicators/apparent-temperature-heatwave-days)
- - [Occurence of tropical nights under future climate scenarios](https://climate-adapt.eea.europa.eu/en/observatory/++aq++metadata/indicators/tropical-nights/)
+ - [Occurence of tropical nights under future climate scenarios](https://climate-adapt.eea.europa.eu/en/metadata/indicators/tropical-nights)
 
 #### CLIMAAX workflow: hazard assessment using EURO-CORDEX climate data
 In the CLIMAAX workflow (in the following pages) we demonstrate how EURO-CORDEX data can be processed to assess heatwave hazard using two different methodologies: EuroHEAT and Xclim. The user can choose to apply one of these methodologies based on their preferred heatwave definition. The methodologies differ in terms of the required input data, temperature thresholds, duration thresholds, computing algorithm, and results.
